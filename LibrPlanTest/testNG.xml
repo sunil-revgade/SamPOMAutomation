@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LibrePLan System Automation Test Suite">
+    
+    <listeners>
+     	<listener class-name="com.libr.qa.ExtentReportListener.ExtentReportListner" />     
+    </listeners>
+     
+    
+	<test name="LibrePLan System Automation Test">
+		<classes>
+			<class name="com.libr.qa.tests.LoginPageTest" />
+			
+		</classes>
+	</test>
+</suite>

@@ -35,6 +35,7 @@ public class ResourcesMachinesPageTest extends TestBase{
 	{
 		String title = machine.verifyPageText();
 		Assert.assertEquals(title, "Machines List");
+		System.out.println("Title is "+ title);
 	}
 	
 }

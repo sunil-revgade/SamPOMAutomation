@@ -43,12 +43,13 @@ public TestBase()
 
 	public void initialise()
 	{
+		String myCurrentDir = System.getProperty("user.dir") ;
 		String browser = prop.getProperty("browser");
 
 		if(browser.equals("chrome"))
 		{
 			System.out.println("Chrome browser");
-			System.setProperty("webdriver.chrome.driver","E:/jars/chromedriver_win32/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",myCurrentDir+"/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if(browser.equals("firefox"))

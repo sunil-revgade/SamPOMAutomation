@@ -21,12 +21,13 @@ public class TestBase {
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListner eventListener;
 
-
-	public TestBase()
+	
+public TestBase()
 	{
 		try{
+			String myCurrentDir = System.getProperty("user.dir") ;
 			prop = new Properties();
-			FileInputStream fp = new FileInputStream("C:/Users/Sunil/workspace/LibrPlanTest/src/main/java/com/libr/qa/configs/config.properties");
+			FileInputStream fp = new FileInputStream(myCurrentDir+"/src/main/java/com/libr/qa/configs/config.properties");
 			prop.load(fp);
 		}
 		catch(FileNotFoundException e)
